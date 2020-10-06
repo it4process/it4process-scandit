@@ -1,0 +1,16 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-button (click)="close()">Close</ion-button>
+        </ion-buttons>
+        <ion-title>{{ windowTitle || 'IT4process' }}</ion-title>
+    </ion-toolbar>
+</ion-header>
+<ion-content>
+    <div class="content">
+        <div *ngIf="frameId" [id]="frameId" class="camera-frame"></div>
+        <div class="overlay">
+            this should be on top
+        </div>
+    </div>
+</ion-content>

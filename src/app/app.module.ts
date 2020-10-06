@@ -8,15 +8,23 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { BarcodeScannerPage } from './barcode-scanner/barcode-scanner.page';
+import { ScanditBarcodeScannerService } from './services/scandit/scandit-barcode-scanner.service';
 
 @NgModule({
-  declarations: [AppComponent],
-  entryComponents: [],
+  declarations: [
+    AppComponent,
+    BarcodeScannerPage
+  ],
+  entryComponents: [
+    BarcodeScannerPage
+  ],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
   providers: [
     StatusBar,
     SplashScreen,
-    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
+    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
+    ScanditBarcodeScannerService
   ],
   bootstrap: [AppComponent]
 })

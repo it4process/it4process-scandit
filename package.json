@@ -25,6 +25,8 @@
     "@ionic/angular": "^5.0.0",
     "cordova-android": "8.1.0",
     "rxjs": "~6.5.5",
+    "scandit-cordova-datacapture-barcode": "^6.5.0",
+    "scandit-cordova-datacapture-core": "^6.5.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.3"
   },
@@ -67,7 +69,9 @@
       "cordova-plugin-ionic-webview": {
         "ANDROID_SUPPORT_ANNOTATIONS_VERSION": "27.+"
       },
-      "cordova-plugin-ionic-keyboard": {}
+      "cordova-plugin-ionic-keyboard": {},
+      "scandit-cordova-datacapture-core": {},
+      "scandit-cordova-datacapture-barcode": {}
     },
     "platforms": [
       "android"

@@ -1,0 +1,26 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+    .camera-frame {
+       height: 100vh;
+       width: 100vw;
+       z-index: -1;
+    }
+
+    .overlay {
+        position: fixed;
+        display: none;
+        bottom: 5vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #2EC1CE;
+        color: white;
+        font-size: 1em;
+        font-weight: bold;
+        padding: 1em;
+    }
+}
