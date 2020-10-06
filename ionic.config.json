@@ -1,5 +1,7 @@
 {
   "name": "it4process-scandit",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
